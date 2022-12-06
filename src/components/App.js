@@ -4,18 +4,12 @@ import About from "./About";
 import ArticleList from "./ArticleList";
 import blogData from "../data/blog";
 
-console.log(blogData);
-
 function App() {
   return (
     <div>
       <Header name={blogData.name} />
-      <About
-        srcparameter={blogData.image}
-        altparameter="blog logo"
-        aboutText={blogData.about}
-      />
-      <ArticleList item={blogData} />
+      <About src={blogData.image} alt="blog logo" about={blogData.about} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
