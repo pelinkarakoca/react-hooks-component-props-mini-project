@@ -1,10 +1,14 @@
-import blogData from "../data/blog";
+//import blogData from "../data/blog";
 
-function About(props) {
+function About({
+  srcparameter = "https://via.placeholder.com/215",
+  altparameter,
+  aboutText,
+}) {
   return (
     <aside>
-      <img src={props.image} alt={props.alt}></img>
-      <p>{props.aboutText}</p>
+      <img src={srcparameter} alt={altparameter}></img>
+      <p>{aboutText}</p>
     </aside>
   );
 }

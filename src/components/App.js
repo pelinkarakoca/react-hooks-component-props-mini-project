@@ -10,8 +10,12 @@ function App() {
   return (
     <div>
       <Header name={blogData.name} />
-      <About src={blogData.image} alt="blog logo" aboutText={blogData.about} />
-      <ArticleList />
+      <About
+        srcparameter={blogData.image}
+        altparameter="blog logo"
+        aboutText={blogData.about}
+      />
+      <ArticleList item={blogData} />
     </div>
   );
 }
