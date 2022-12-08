@@ -6,9 +6,9 @@ import blogData from "../data/blog";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header name={blogData.name} />
-      <About src={blogData.image} alt="blog logo" about={blogData.about} />
+      <About image={blogData.image} about={blogData.about} />
       <ArticleList posts={blogData.posts} />
     </div>
   );

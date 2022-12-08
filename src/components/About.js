@@ -1,9 +1,9 @@
 //import blogData from "../data/blog";
 
-function About({ src = "https://via.placeholder.com/215", alt, about }) {
+function About({ image = "https://via.placeholder.com/215", about }) {
   return (
     <aside>
-      <img src={src} alt={alt}></img>
+      <img src={image} alt="blog logo"></img>
       <p>{about}</p>
     </aside>
   );
